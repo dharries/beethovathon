@@ -22,6 +22,10 @@ app.get('/event', function (req, res) {
     res.render('event', {event: true});
 });
 
+app.get('/contact', function (req, res) {
+    res.render('contact', {contact: true});
+});
+
 app.use(express.static(__dirname));
 
 app.listen(3000);
